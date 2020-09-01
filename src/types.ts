@@ -1,65 +1,65 @@
 export enum AvailableLanguages {
-  ar = 'ar',
-  az = 'az',
-  be = 'be',
-  bg = 'bg',
-  bn = 'bs',
-  bs = 'bs',
-  ca = 'ca',
-  cs = 'cs',
-  da = 'da',
-  de = 'de',
-  el = 'el',
-  en = 'en',
-  eo = 'eo',
-  es = 'es',
-  et = 'et',
-  fi = 'fi',
-  fr = 'fr',
-  he = 'he',
-  hi = 'hi',
-  hr = 'hr',
-  hu = 'hu',
-  id = 'id',
-  is = 'is',
-  it = 'it',
-  ja = 'ja',
-  ka = 'ka',
-  kn = 'kn',
-  ko = 'ko',
-  kw = 'kw',
-  lv = 'lv',
-  ml = 'ml',
-  mr = 'mr',
-  nb = 'nb',
-  nl = 'nl',
-  no = 'no',
-  pa = 'pa',
-  pl = 'pl',
-  pt = 'pt',
-  ro = 'ro',
-  ru = 'ru',
-  sk = 'sk',
-  sl = 'sl',
-  sr = 'sr',
-  sv = 'sv',
-  ta = 'ta',
-  te = 'te',
-  tet = 'tet',
-  tr = 'tr',
-  uk = 'uk',
-  ur = 'ur',
-  pig = 'x-pig-latin',
-  zh = 'zh',
-  zhtw = 'zh-tw',
+  ar = "ar",
+  az = "az",
+  be = "be",
+  bg = "bg",
+  bn = "bs",
+  bs = "bs",
+  ca = "ca",
+  cs = "cs",
+  da = "da",
+  de = "de",
+  el = "el",
+  en = "en",
+  eo = "eo",
+  es = "es",
+  et = "et",
+  fi = "fi",
+  fr = "fr",
+  he = "he",
+  hi = "hi",
+  hr = "hr",
+  hu = "hu",
+  id = "id",
+  is = "is",
+  it = "it",
+  ja = "ja",
+  ka = "ka",
+  kn = "kn",
+  ko = "ko",
+  kw = "kw",
+  lv = "lv",
+  ml = "ml",
+  mr = "mr",
+  nb = "nb",
+  nl = "nl",
+  no = "no",
+  pa = "pa",
+  pl = "pl",
+  pt = "pt",
+  ro = "ro",
+  ru = "ru",
+  sk = "sk",
+  sl = "sl",
+  sr = "sr",
+  sv = "sv",
+  ta = "ta",
+  te = "te",
+  tet = "tet",
+  tr = "tr",
+  uk = "uk",
+  ur = "ur",
+  pig = "x-pig-latin",
+  zh = "zh",
+  zhtw = "zh-tw",
 }
 
 export enum Units {
-  auto = 'auto',
-  ca = 'ca',
-  uk2 = 'uk2',
-  us = 'us',
-  si = 'si',
+  auto = "auto",
+  ca = "ca",
+  uk2 = "uk2",
+  us = "us",
+  si = "si",
 }
 
 export type Nullable<T> = null | undefined | T;
@@ -75,11 +75,11 @@ export interface DarkSkyRequestParams {
     exclude?: string[];
     lang?: keyof typeof AvailableLanguages;
     units?: keyof typeof Units;
-    extend?: 'hourly';
+    extend?: "hourly";
   };
 }
 
-export type Precipitation = 'rain' | 'snow' | 'sleet';
+export type Precipitation = "rain" | "snow" | "sleet";
 
 export interface DarkSkyDataPoint {
   apparentTemperature?: Nullable<number>;
@@ -138,7 +138,7 @@ export interface Alert {
   description: string;
   expires: Timestamp;
   regions: string[];
-  severity: 'advisory' | 'watch' | 'warning';
+  severity: "advisory" | "watch" | "warning";
   time: Timestamp;
   title: string;
   uri: string;
