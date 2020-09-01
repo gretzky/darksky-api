@@ -1,5 +1,5 @@
 {
-  "name": "darksky-api",
+  "name": "@gretzky/darksky-api",
   "author": "gretzky",
   "version": "0.1.0",
   "license": "MIT",

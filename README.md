@@ -5,9 +5,9 @@ Wrapper around the [Dark Sky API](https://darksky.net/dev/docs).
 ## Usage
 
 ```bash
-yarn add darksky-api
+yarn add @gretzky/darksky-api
 // or
-npm install --save darksky-api
+npm install --save @gretzky/darksky-api
 ```
 
 ### Methods
