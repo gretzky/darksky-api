@@ -1,3 +1,5 @@
+import { AxiosResponse } from "axios";
+
 export enum AvailableLanguages {
   ar = "ar",
   az = "az",
@@ -162,4 +164,14 @@ export interface DarkSkyResponse {
   hourly?: Nullable<DarkSkyDataBlock>;
   alerts?: Nullable<Alert[]>;
   flags?: Nullable<Flags>;
+}
+
+export interface DarkSkyApi {
+  getForecast: ({
+    key,
+    latitude,
+    longitude,
+    time,
+    params,
+  }: DarkSkyRequestParams) => Promise<AxiosResponse<DarkSkyResponse>>;
 }
